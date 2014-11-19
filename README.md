@@ -36,16 +36,16 @@ visit `http://localhost:1337`
 
 ## Development
 
-**Map**
+##### Map
 The map is based on [Leaflet](http://leafletjs.com). Moreover we use [topojson.js](https://github.com/mbostock/topojson) and this [codesnippet](https://gist.github.com/rclark/5779673) in order to enable TopoJSON support for Leaflet.
 
-**Data**
+##### Data
 We have two files that contain data we use in our application
 
 * `data/berlin-zipcodes-data.topojson` This file contains the geodata and the data (id,name,district,randomRent) we use in our tooltips
 * `data/labels.json` This file contains the labels we display on our map
 
-**UI/General**
+##### UI/General
 We use this libraries for our UI
 
 * [jQuery](http://jquery.com)
