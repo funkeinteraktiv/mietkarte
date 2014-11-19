@@ -1,4 +1,4 @@
-# mietkarte
+# Interactive map
 
 Source code of our [Berlin rents map](http://morgenpost.de/mietkarte).
 This repository does not contain real data, but **random data** for coloring the polygons.
