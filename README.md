@@ -2,6 +2,7 @@
 
 Source code of our [Berlin rents map](http://morgenpost.de/mietkarte).
 This repository does not contain real data, but **random data** for coloring the polygons.
+You can find a demo [here](http://berlinermorgenpost.github.io/mietkarte/).
 
 ![Berlin rents map](http://interaktiv.morgenpost.de/mietkarte-berlin/img/thumb_mietkarte.jpg)
 
