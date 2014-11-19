@@ -1,0 +1,105 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class=""> <!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+
+	<title>Titel der Anwendung</title>
+    
+    <meta name="robots" content="index, follow">    
+    <meta name="description" content="">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" type="text/css" href="bower_components/leaflet/dist/leaflet.css" />
+	<link rel="stylesheet" type="text/css" href="bower_components/nouislider/jquery.nouislider.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+</head>
+<body>
+
+	<div class="header group">
+        <h1>Titel der Anwendung</h1>
+	</div>
+
+    <!-- we display this message on older browsers < IE9 -->
+    <div class="browserMessage">
+        <strong>Ihr Browser kann die interaktive Karte nicht darstellen.</strong><br/><br/>
+        Wir empfehlen die <a target="_blank" href="http://browsehappy.com/?locale=de_DE">aktuellen Versionen von Firefox, Chrome, Safari und Internet Explorer (ab Version 9)</a>.
+    </div>
+
+
+	<div class="app">
+            
+		<div class="icon-info"></div>
+
+		<div id="tooltip" class="box">
+			<div class="headline"></div>
+            <div class="bezirk"></div>
+			<div class="tooltip-text">
+                Randomisierter Preis: <span class="rent-price"></span> €.
+             </div>
+		</div>
+
+		<div id="map"></div>
+
+        <div class="sidebar box">
+			<div class="subline">
+
+                Ihr Haushaltseinkommen<br /><span class="light hide-on-mobile">monatlich netto verfügbar</span>
+            </div>
+			<div class="slider-output "><span></span> Euro</div>
+			<div id="slider">
+				<div class="slider-values max hide-on-mobile">- 5.000 Euro</div>
+				<div class="slider-values min hide-on-mobile">- 0 Euro</div>
+			</div> 
+		</div>
+
+        <div class="room-chooser box hide-on-mobile">
+            <div class="subline label">Anzahl der Zimmer<br /></div>
+            <div class="btn-wrapper group"> 
+                <div class="room-btn btn" data-room="1" title="40m²">1</div>
+                <div class="room-btn btn" data-room="2" title="72m²">2</div>
+                <div class="room-btn btn" data-room="3" title="90m²">3</div>
+                <div class="room-btn btn" data-room="4" title="120m²">4</div>
+            </div> 
+            <span class="light currentSize">entspricht <span class="val"></span>m²</span>
+        </div>
+
+
+		<div class="legend">
+    		<div class="subline">
+                <div>Anteil der Warmmiete an Ihrem Einkommen</div>
+            </div>
+    			<ul>
+    				<li><span class="col color-0"></span><span class="legend-label">bis 25%</span></li>
+                    <li class="special-li"><div class="divider hide">Berlin-Schnitt: 26,6%</div></li>
+    				<li><span class="col color-1"></span><span class="legend-label">26 - 33%</span></li>
+    				<li><span class="col color-2"></span><span class="legend-label">34 - 49%</span></li>
+    				<li><span class="col color-3"></span><span class="legend-label">50 - 66%</span></li>
+    				<li><span class="col color-4"></span><span class="legend-label last-label">66%+</span></li>
+    				<li class="nodata"><span class="col color-5"></span><span class="legend-label">keine Daten</span></li>
+    			</ul>
+		</div>
+
+    	<div class="info box">
+            <div class="close">&times;</div>
+            <h2>Info Text Titel</h2>
+            <h3>Achtung: Diese Anwendung zeigt Zufallswerte.</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum voluptas omnis temporibus totam asperiores tempora voluptates enim tenetur eos dignissimos quam hic ea nisi, neque sed minima harum ipsum veritatis?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum voluptas omnis temporibus totam asperiores tempora voluptates enim tenetur eos dignissimos quam hic ea nisi, neque sed minima harum ipsum veritatis? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum voluptas omnis temporibus totam asperiores tempora voluptates enim tenetur eos dignissimos quam hic ea nisi, neque sed minima harum ipsum veritatis? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum voluptas omnis temporibus totam asperiores tempora voluptates enim tenetur eos dignissimos quam hic ea nisi, neque sed minima harum ipsum veritatis?</p>
+
+        </div>  
+    </div>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/nouislider/jquery.nouislider.js"></script>
+    <script src="bower_components/leaflet/dist/leaflet.js"></script>
+    <script src="bower_components/topojson/topojson.js"></script>
+
+    <script src="js/topojson-leaflet.js"></script>
+    <script src="js/config.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
