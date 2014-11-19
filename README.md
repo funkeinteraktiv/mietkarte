@@ -2,7 +2,8 @@
 
 Source code of our [Berlin rents map](http://morgenpost.de/mietkarte).
 This repository does not contain real data, but **random data** for coloring the polygons.
-You can find a demo [here](http://berlinermorgenpost.github.io/mietkarte/).
+
+##### [Demo](http://berlinermorgenpost.github.io/mietkarte/)
 
 ![Berlin rents map](http://interaktiv.morgenpost.de/mietkarte-berlin/img/thumb_mietkarte.jpg)
 
@@ -43,8 +44,8 @@ The map is based on [Leaflet](http://leafletjs.com). Moreover we use [topojson.j
 ##### Data
 We have two files that contain data we use in our application
 
-* `data/berlin-zipcodes-data.topojson` This file contains the geodata and the data (id,name,district,randomRent) we use in our tooltips
-* `data/labels.json` This file contains the labels we display on our map
+* `app/data/berlin-zipcodes-data.topojson` contains the geodata and the data (id,name,district,randomRent) we use in our tooltips
+* `app/data/labels.json` contains the labels we display on our map
 
 ##### UI/General
 We use this libraries for our UI
