@@ -67,7 +67,7 @@ We use this libraries for our UI
 
 The MIT License (MIT)
 
-Copyright (c) [2014] [Berliner Morgenpost]
+Copyright (c) 2014 Berliner Morgenpost
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
